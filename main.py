@@ -6,11 +6,13 @@ Usage:
     python main.py natural_dynamics
     python main.py feedback_linearization
     python main.py energy_shaping_local_stabilization
+    python main.py optimal_control
 
 Sections:
-    01  natural_dynamics                  No input — study natural behavior
-    02  feedback_linearization            Full torque — cancel nonlinearities globally
+    01  natural_dynamics                    No input — study natural behavior
+    02  feedback_linearization              Full torque — cancel nonlinearities globally
     03  energy_shaping_local_stabilization  Limited torque — swing-up + LQR
+    04  optimal_control                     Minimum-time bang-bang via Pontryagin
 """
 
 import sys
@@ -38,6 +40,8 @@ def main():
             lambda: _load('pendulum/02_feedback_linearization/analysis.py').run_feedback_linearization(),
         'energy_shaping_local_stabilization':
             lambda: _load('pendulum/03_energy_shaping_local_stabilization/analysis.py').run_energy_shaping_local_stabilization(),
+        'optimal_control':
+            lambda: _load('pendulum/04_optimal_control/analysis.py').run_optimal_control(),
     }
 
     fn = dispatch.get(experiment)
