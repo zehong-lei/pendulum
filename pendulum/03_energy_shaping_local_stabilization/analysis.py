@@ -24,7 +24,7 @@ from scipy.linalg import solve_continuous_are
 from pendulum.dynamics import pendulum_dynamics, wrap_angle, total_energy
 from pendulum.simulation import DEFAULT_PARAMS
 
-RESULTS = 'results/pendulum/03_energy_shaping_local_stabilization'
+RESULTS = 'results/03_energy_shaping_local_stabilization'
 PARAMS  = DEFAULT_PARAMS
 
 K_E              = 2.0    # energy shaping gain

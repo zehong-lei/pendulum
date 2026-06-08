@@ -17,7 +17,7 @@ from scipy.integrate import solve_ivp
 from pendulum.dynamics import pendulum_dynamics, total_energy
 from pendulum.simulation import DEFAULT_PARAMS
 
-RESULTS = 'results/pendulum/01_natural_dynamics'
+RESULTS = 'results/01_natural_dynamics'
 PARAMS = DEFAULT_PARAMS
 
 

@@ -16,7 +16,7 @@ from scipy.integrate import solve_ivp
 from pendulum.dynamics import pendulum_dynamics, wrap_angle, total_energy
 from pendulum.simulation import DEFAULT_PARAMS
 
-RESULTS = 'results/pendulum/02_feedback_linearization'
+RESULTS = 'results/02_feedback_linearization'
 PARAMS  = DEFAULT_PARAMS
 KP      = 10.0
 KD      = 6.0   # poles: s² + 6s + 10 = 0  →  s = -3 ± j
